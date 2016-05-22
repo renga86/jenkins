@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Education Team education@docker.com
+MAINTAINER Slat Team slatteam@docker.com
 RUN apt-get update -qq
 RUN apt-get install -qqy ca-certificates openjdk-7-jdk curl git-core 
 
