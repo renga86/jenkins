@@ -17,7 +17,7 @@ RUN curl -sf -o /opt/jenkins/data/plugins/token-macro.hpi -L http://mirrors.jenk
 ADD jenkins/com.cloudbees.dockerpublish.DockerBuilder.xml /opt/jenkins/data/com.cloudbees.dockerpublish.DockerBuilder.xml
 ADD jenkins/com.cloudbees.jenkins.GitHubPushTrigger.xml /opt/jenkins/data/com.cloudbees.jenkins.GitHubPushTrigger.xml 
  
-ADD jenkins/jobs/ /opt/jenkins/data/jobs/
+#ADD jenkins/jobs/ /opt/jenkins/data/jobs/
 
 RUN curl -sf -o /usr/local/bin/docker -L https://get.docker.io/builds/Linux/x86_64/docker-latest
 ADD runjenkins.sh /usr/local/bin/runjenkins
